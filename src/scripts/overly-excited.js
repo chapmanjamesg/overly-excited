@@ -18,7 +18,7 @@ function addExcitement (theWordArray) {
         if (i % 3 === 0 && i > 1){
             buildMeUp += '! ' + theWordArray[i]
             console.log(buildMeUp)
-        }else if (i === theWordArray.length){
+        }else if ((i+1) === theWordArray.length){
             buildMeUp += '!' + theWordArray[i]
             // Print buildMeUp to the console
             console.log(buildMeUp)
