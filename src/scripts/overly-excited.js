@@ -48,8 +48,8 @@ let symbols = ['!', '#', '$', '.', '?', '&']
     and output the words to the browser console.
 */
 let j = symbols[Math.floor(Math.random() * 6)]
-
-function addExcitement (theWordArray, j) {
+let k = Math.floor(Math.random()*5)
+function addExcitement (theWordArray, j, k) {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
@@ -72,4 +72,4 @@ function addExcitement (theWordArray, j) {
 }
 
 // Invoke the function and pas s in the array
-addExcitement(sentence, j)
+addExcitement(sentence, j, k)
