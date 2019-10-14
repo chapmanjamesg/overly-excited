@@ -49,7 +49,7 @@ let symbols = ['!', '#', '$', '.', '?', '&']
 */
 let j = symbols[Math.floor(Math.random() * 6)]
 let k = Math.floor(Math.random()*7)
-function addExcitement (theWordArray, j, k) {
+const  addExcitement = (theWordArray, j, k) => {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
