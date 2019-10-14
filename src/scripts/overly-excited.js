@@ -48,19 +48,20 @@ let symbols = ['!', '#', '$', '.', '?', '&']
     and output the words to the browser console.
 */
 let j = symbols[Math.floor(Math.random() * 6)]
-let k = Math.floor(Math.random()*5)
+let k = Math.floor(Math.random()*7)
 function addExcitement (theWordArray, j, k) {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
-
+    
     for (let i = 0; i < theWordArray.length; i++) {
         // Concatenate the new word onto buildMeUp
         if (i % 3 === 0 && i > 1){
-            buildMeUp += `${j} ` + theWordArray[i] + ' '
+            //used the repeat method to multiply the random symbols, by the random number
+            buildMeUp += `${j.repeat(k)} ` + theWordArray[i] + ' '
             console.log(buildMeUp)
         }else if((i + 1) === theWordArray.length){
-            buildMeUp += theWordArray[i] + `${j}`
+            buildMeUp += theWordArray[i] + `${j.repeat(k)}`
             console.log(buildMeUp)
         }else{
             buildMeUp += theWordArray[i] + ' '
